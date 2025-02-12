@@ -4,13 +4,24 @@
     <meta charset="utf-8" />
     <title>Steven Journet Maçonnerie - petits chantiers construction et rénovation à Joze</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="maçonnerie, maçon, petits chantiers, rénovation, construction, travaux maçonnerie, artisan, aménagement extérieur, dalle, mur banché, béton banché, joints de pierre, Clermont-ferrand, Joze, Vichy, Thiers, Riom, puy de dôme" name="keywords" />
+    <meta content="artisan maçon Clermont-Ferrand, rénovation maçonnerie Puy-de-Dôme, petits chantiers maçonnerie, construction murs et dalles, joints de pierre, enduit et crépis, maçonnerie aménagement extérieur, béton banché, devis maçon gratuit Joze, Vichy, Thiers, Riom" name="keywords" />
     <meta content="Entreprise de maçonnerie spécialisée dans les petits chantiers et la rénovation à Clermont-Ferrand et Joze. Contactez-nous pour vos travaux de construction ou de rénovation." name="description" />
     <meta name="author" content="Steven Journet" />
     <meta name="geo.region" content="FR" />
     <meta name="geo.placename" content="Joze" />
     <meta name="geo.position" content="45.7821;3.0565" />
     <meta name="ICBM" content="45.7821, 3.0565" />
+    <meta name="google-site-verification" content="LTbKPvtLzt6MxqRQBxpFHea_JsGdG09-3gvVHOecXLU" /> <!-- vérification Google search console -->
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4883VGGBE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P4883VGGBE');
+</script>
 
     <!-- Favicon -->
     <link href="img/logosjmentet.png" rel="icon" />
@@ -607,7 +618,9 @@
                       type="text"
                       class="form-control bg-dark border-0"
                       id="gname"
-                      placeholder="Gurdian Name"
+                      name="name"
+                      placeholder="Guardian Name"
+                      required
                     />
                     <label for="gname">Votre Nom</label>
                   </div>
@@ -618,7 +631,9 @@
                       type="email"
                       class="form-control bg-dark border-0"
                       id="gmail"
-                      placeholder="Gurdian Email"
+                      name="email"
+                      placeholder="Guardian Email"
+                      required
                     />
                     <label for="gmail">Votre Email</label>
                   </div>
@@ -629,7 +644,9 @@
                       type="text"
                       class="form-control bg-dark border-0"
                       id="cname"
+                      name="phone"
                       placeholder="Child Name"
+                      required
                     />
                     <label for="cname">Votre téléphone</label>
                   </div>
@@ -640,7 +657,9 @@
                       type="text"
                       class="form-control bg-dark border-0"
                       id="cage"
+                      name="work_type"
                       placeholder="Child Age"
+                      required
                     />
                     <label for="cage">Type de travaux</label>
                   </div>
@@ -651,17 +670,20 @@
                       class="form-control bg-dark border-0"
                       placeholder="Leave a message here"
                       id="message"
+                      name="message"
                       style="height: 100px"
+                      required
                     ></textarea>
                     <label for="message">Décrivez votre projet</label>
                   </div>
                 </div>
-
-                 <!-- Champs cachés pour personnaliser l'email -->
-    <input type="hidden" name="_subject" value="Nouvelle demande de contact">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_autoresponse" value="Merci pour votre message, je vous répondrai rapidement !">
-
+            
+                <!-- Champs cachés pour personnaliser l'email -->
+                <input type="hidden" name="_next" value="https://sjm63.github.io/merci.html">
+                <input type="hidden" name="_subject" value="Nouvelle demande de contact">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Merci pour votre message, je vous répondrai rapidement !">
+            
                 <div class="col-12">
                   <button class="btn btn-primary w-100 py-3" type="submit">
                     Envoyer ma demande
